@@ -1,23 +1,24 @@
-{
+
   "name": "socat-serialproxy",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "slug": "socat_serialproxy",
-  "description": "Bridged serial device via TCP (e.g. from ser2net) into Home Assistant OS",
-  "arch": ["aarch64", "armv7", "amd64"],
+  "description": "Expose a remote TCP serial port as a local device.",
+  "arch": ["amd64", "aarch64", "armv7"],
   "startup": "services",
   "boot": "auto",
-  "host_network": true,
   "options": {
-    "remote_host": "192.168.20.4",
-    "remote_port": 2004,
-    "device_name": "/dev/ttyWMA0"
+    "REMOTE_HOST": "192.168.88.100",
+    "REMOTE_PORT": 2000,
+    "DEVICE_NAME": "/dev/ttyUSB20"
   },
   "schema": {
-    "remote_host": "str",
-    "remote_port": "int",
-    "device_name": "str"
+    "REMOTE_HOST": "str",
+    "REMOTE_PORT": "int",
+    "DEVICE_NAME": "str"
   },
+  "init": false,
+  "host_network": true,
   "privileged": ["SYS_ADMIN"],
-  "full_access": false,
-  "tmpfs": true
+  "devices": ["/dev"],
+  "full_access": true
 }
