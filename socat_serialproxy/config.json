@@ -1,14 +1,14 @@
 
   "name": "socat-serialproxy",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "slug": "socat_serialproxy",
   "description": "Expose a remote TCP serial port as a local device.",
   "arch": ["amd64", "aarch64", "armv7"],
   "startup": "services",
   "boot": "auto",
   "options": {
-    "REMOTE_HOST": "192.168.88.100",
-    "REMOTE_PORT": 2000,
+    "REMOTE_HOST": "192.168.20.20",
+    "REMOTE_PORT": 2004,
     "DEVICE_NAME": "/dev/ttyUSB20"
   },
   "schema": {
