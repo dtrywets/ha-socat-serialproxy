@@ -1,5 +1,5 @@
 {
-  "name": "dtry's Add-ons",
+  "name": "dtrywets Add-ons",
   "url": "https://github.com/dtrywets/ha-socat-serialproxy",
   "maintainer": "dtrywets",
   "addons": ["socat_serialproxy"],
