@@ -1,6 +1,6 @@
 {
   "name": "socat-serialproxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "socat_serialproxy",
   "description": "Bridged serial device via TCP (e.g. from ser2net) into Home Assistant OS",
   "arch": ["aarch64", "armv7", "amd64"],
