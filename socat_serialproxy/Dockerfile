@@ -9,5 +9,5 @@ RUN apk add --no-cache socat bash
 COPY socat_serialproxy/root /etc
 
 # (Optional, falls run.sh zusätzlich vorhanden sein soll)
-COPY socat_serialproxy/run.sh /run.sh
+COPY run.sh /run.sh
 RUN chmod +x /run.sh
