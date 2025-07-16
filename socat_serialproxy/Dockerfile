@@ -8,4 +8,3 @@ RUN apk add --no-cache socat bash
 COPY root /etc
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
-RUN ln -sf /init /init
